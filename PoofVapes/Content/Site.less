@@ -7,6 +7,10 @@ body {
     background: @backgroundColor;
 }
 
+a {
+    color: @linkColor;
+}
+
 /* Set padding to keep content from hitting the edges */
 .body-content {
     padding-left: 15px;
@@ -31,5 +35,10 @@ body {
 
     .navbar-nav > li > a {
         font-weight: bold;
+    }
+
+    .navbar-nav > li > a:hover,
+    .navbar-nav > li > a:focus {
+        color: @linkColor;
     }
 }

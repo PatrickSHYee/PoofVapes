@@ -3,6 +3,9 @@
   padding-bottom: 20px;
   background: #000000;
 }
+a {
+  color: #206eaf;
+}
 /* Set padding to keep content from hitting the edges */
 .body-content {
   padding-left: 15px;
@@ -24,5 +27,9 @@
 }
 .navbar-inverse .navbar-nav > li > a {
   font-weight: bold;
+}
+.navbar-inverse .navbar-nav > li > a:hover,
+.navbar-inverse .navbar-nav > li > a:focus {
+  color: #206eaf;
 }
 /*# sourceMappingURL=Site.css.map */

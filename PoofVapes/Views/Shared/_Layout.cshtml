@@ -17,13 +17,13 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                @Html.ActionLink("Poof Vapes & Lounge", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+                <a class="navbar-brand" href="@Url.Action("Index", "Home", new {area =""})">Poof Vapes & Lounge</a> 
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
-                    <li>@Html.ActionLink("Home", "Index", "Home")</li>
-                    <li>@Html.ActionLink("About", "About", "Home")</li>
-                    <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
+                    <li><a href="@Url.Action("Index", "Home")">Home</a></li>
+                    <li><a href="@Url.Action("About", "Home")">About</a></li>
+                    <li><a href="@Url.Action("Contact", "Home")">Contact</a></li>
                 </ul>
                 @Html.Partial("_LoginPartial")
             </div>
@@ -39,6 +39,7 @@
 
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
     @RenderSection("scripts", required: false)
 </body>
 </html>

@@ -1,8 +1,51 @@
 ﻿@{
-    ViewBag.Title = "Contact";
+    ViewBag.Title = "Contact us";
 }
-<h2>@ViewBag.Title.</h2>
-<h3>@ViewBag.Message</h3>
+
+<div ng-app="">
+    <div class="jumbotron">
+        <h2>@ViewBag.Title</h2>
+        <p>@ViewBag.Message</p>
+    </div>
+    <form>
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="input-group">
+                    <span class="input-group-addon" id="size_NameAddOn">Name</span>
+                    <input class="form-control" type="text" ng-model="name" placeholder="Name" aria-describedby="size_NameAddOn" />
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="input-group">
+                    <span class="input-group-addon" id="size_EmailAddOn">Email</span>
+                    <input class="form-control" type="email" ng-model="email" placeholder="Emailme@bigCompany" aria-describedby="size_EmailAddOn" />
+                </div>
+            </div>
+        </div>
+    </form>
+    <div class="row">
+        <div class="col-lg-12">
+            <label>Message</label>
+            <textarea class="form-control" ng-model="message" rows="5" placeholder="Love the vaping..."></textarea>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-12 text-right">
+            <button type="submit" class="btn">Send</button>
+        </div>
+    </div>
+    <div class="row">
+        <label></label>
+    </div>
+    <div class="panel">
+        <p>Dear Mr. Patrick S. Yee,</p>
+        <p><span ng-bind="message"></span></p>
+        <p>From,</p>
+        <p><span ng-bind="name"></span></p>
+        <p><span ng-bind="email"></span></p>
+    </div>
+</div>
+
 
 <address>
     One Microsoft Way<br />

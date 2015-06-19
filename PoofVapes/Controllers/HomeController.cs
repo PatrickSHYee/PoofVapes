@@ -22,7 +22,7 @@ namespace PoofVapes.Controllers
 
         public ActionResult Contact()
         {
-            ViewBag.Message = "Your contact page.";
+            ViewBag.Message = "Contact Poof Vapes and Lounge with suggestions and comments.";
 
             return View();
         }
